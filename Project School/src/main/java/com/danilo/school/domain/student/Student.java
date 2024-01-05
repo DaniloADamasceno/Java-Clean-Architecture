@@ -8,9 +8,8 @@ public class Student {
     private String name;
     private CPF cpf;
     private Email email;
-    private String phone;
-    private String registration;
     private List<Phone> phoneStudent = new ArrayList<>();
+    private String registration;
 
 
     //! -----------------------------------------------  CONSTRUCTORS  -------------------------------------------------
@@ -25,8 +24,21 @@ public class Student {
         this.phoneStudent.add(new Phone(ddd, phoneNumber));
     }
 
+    //! -----------------------------------------------  GETTERS AND SETTERS  ------------------------------------------
 
+    public String getName() {
+        return name;
+    }
 
+    public CPF getCpf() {
+        return cpf;
+    }
 
+    public Email getEmail() {
+        return email;
+    }
 
+    public List<Phone> getPhoneStudent() {
+        return phoneStudent;
+    }
 }
