@@ -1,4 +1,4 @@
-package com.danilo.school.school.student;
+package com.danilo.school.domain.student;
 
 import java.util.ArrayList;
 import java.util.List;

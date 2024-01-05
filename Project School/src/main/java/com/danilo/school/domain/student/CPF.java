@@ -1,8 +1,14 @@
-package com.danilo.school.school;
+package com.danilo.school.domain.student;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class CPF {
 
     private String number;
+
 
     //! -----------------------------------------------  CONSTRUCTORS  -------------------------------------------------
 
@@ -13,12 +19,4 @@ public class CPF {
         this.number = number;
     }
 
-    //! -------------------------------------------  GETTERS AND SETTERS -----------------------------------------------
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
 }

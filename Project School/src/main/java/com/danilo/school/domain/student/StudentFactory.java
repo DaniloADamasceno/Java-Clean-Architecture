@@ -1,4 +1,4 @@
-package com.danilo.school.school.student;
+package com.danilo.school.domain.student;
 
 public class StudentFactory {
 

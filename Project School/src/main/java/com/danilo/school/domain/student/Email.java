@@ -1,4 +1,4 @@
-package com.danilo.school.school;
+package com.danilo.school.domain.student;
 
 public class Email {
 

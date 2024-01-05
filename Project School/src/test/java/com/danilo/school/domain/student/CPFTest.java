@@ -1,6 +1,6 @@
-package com.danilo.school.school;
+package com.danilo.school.domain.student;
 
-import com.danilo.school.school.student.CPF;
+import com.danilo.school.domain.student.CPF;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

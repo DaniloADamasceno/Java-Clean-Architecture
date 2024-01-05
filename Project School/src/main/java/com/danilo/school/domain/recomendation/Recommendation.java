@@ -1,6 +1,6 @@
-package com.danilo.school.school.recomendation;
+package com.danilo.school.domain.recomendation;
 
-import com.danilo.school.school.student.Student;
+import com.danilo.school.domain.student.Student;
 import lombok.Getter;
 
 import java.time.LocalDateTime;
