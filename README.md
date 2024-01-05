@@ -27,8 +27,8 @@
 
  Este é um projeto de **Java Clean Architecture** desenvolvido com Spring Boot e Java.
  projeto consiste em criar um aplicação para gestão de uma escola onde algumas das atividades consistem em matricular alunos, cadastrar telefones dos alunos, indicação de alunos, etc.
- Sempre que uma pessoa estudante altera seu número de telefone, precisamos adicionar o novo número, pois existe um contato constante entre elas e a plataforma de ensino. Teremos também a funcionalidade de indicação, onde uma pessoa estudante pode indicar a plataforma para outra e regras específicas aplicam-se a isso.
- Este é um curso online que ensina os conceitos e as vantagens da Clean Architecture, uma arquitetura de software focada no código e em isolar o domínio da aplicação da infraestrutura. O curso é baseado no livro “Clean Architecture: A Craftsman’s Guide to Software Structure and Design”, de Robert C. Martin.
+ Teremos também a funcionalidade de indicação, onde uma pessoa estudante pode indicar a plataforma para outra e regras específicas aplicam-se a isso.
+ Este é um projeto que aborda os conceitos e as vantagens da Clean Architecture, uma arquitetura de software focada no código e em isolar o domínio da aplicação da infraestrutura. O projeto é baseado no livro “Clean Architecture: A Craftsman’s Guide to Software Structure and Design”, de Robert C. Martin.
 
 - Componentes do software e suas relações
 - Infraestrutura do software
