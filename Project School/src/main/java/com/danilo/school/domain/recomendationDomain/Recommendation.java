@@ -1,4 +1,4 @@
-package com.danilo.school.domain.recomendation;
+package com.danilo.school.domain.recomendationDomain;
 
 import com.danilo.school.domain.student.Student;
 import lombok.Getter;

@@ -10,6 +10,7 @@ public class Student {
     private Email email;
     private List<Phone> phoneStudent = new ArrayList<>();
     private String registration;
+    private String password;
 
 
     //! -----------------------------------------------  CONSTRUCTORS  -------------------------------------------------

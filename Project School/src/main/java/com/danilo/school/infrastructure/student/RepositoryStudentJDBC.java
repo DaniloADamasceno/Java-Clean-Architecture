@@ -10,13 +10,13 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RepositoryStudentInfrastructure implements RepositoryStudent {
+public class RepositoryStudentJDBC implements RepositoryStudent {
 
     private final Connection connection;
 
 
     //! -----------------------------------------------  CONSTRUCTORS  -------------------------------------------------
-    public RepositoryStudentInfrastructure(Connection connection) {
+    public RepositoryStudentJDBC(Connection connection) {
         this.connection = connection;
     }
 
@@ -28,7 +28,7 @@ public class RepositoryStudentInfrastructure implements RepositoryStudent {
 
         String sql = "INSERT INTO STUDENT VALUES(?, ?, ?)";
         try {
-            // Inserir o Aluno
+            // --> Inserir o Aluno
             PreparedStatement preparedStatement;
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, student.getName());
@@ -36,7 +36,7 @@ public class RepositoryStudentInfrastructure implements RepositoryStudent {
             preparedStatement.setString(3, student.getEmail().getAddress());
             preparedStatement.execute();
 
-            // Inserir os Telefones
+            // --> Inserir os Telefones
             sql = "INSERT INTO PHONE VALUES(?, ?)";
             preparedStatement = connection.prepareStatement(sql);
             for (Phone phone : student.getPhoneStudent()) {
@@ -48,6 +48,9 @@ public class RepositoryStudentInfrastructure implements RepositoryStudent {
             throw new RuntimeException(e);
         }
     }
+
+
+    // --> BUSCAR POR CPF
 
     @Override
     public Student findByCPF(CPF cpf) {
@@ -64,12 +67,12 @@ public class RepositoryStudentInfrastructure implements RepositoryStudent {
                 throw new StudentNotFound(cpf);
             }
 
-            // Buscar o Aluno
+            // --> Buscar o Aluno
             String name = resultSet.getString("name");
             Email email = new Email(resultSet.getString("email"));
             Student foundStudent = new Student(name, cpf, email);
 
-            // Buscar os Telefones
+            // --> Buscar os Telefones
             sql = "SELECT * FROM PHONE WHERE student_cpf = ?";
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, cpf.getNumber());
@@ -84,6 +87,9 @@ public class RepositoryStudentInfrastructure implements RepositoryStudent {
             throw new RuntimeException(e);
         }
     }
+
+
+    // --> LISTAR TODOS OS ALUNOS
 
     @Override
     public List<Student> listAllStudents() {
@@ -102,7 +108,7 @@ public class RepositoryStudentInfrastructure implements RepositoryStudent {
                 Email email = new Email(resultSetListAll.getString("email"));
                 Student student = new Student(name, cpf, email);
 
-                Long id = resultSetListAll.getLong("id");
+                long id = resultSetListAll.getLong("id");
                 sql = "SELECT * FROM PHONE WHERE student_cpf = ?";
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setLong(1, id);
