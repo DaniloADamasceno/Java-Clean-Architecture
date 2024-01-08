@@ -6,4 +6,6 @@ public interface SendReferralEmail {
 
     // --> Enviar email de indicação
     void SendEmail(Student nominatedStudent);
+
+
 }
