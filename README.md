@@ -1,5 +1,13 @@
 # Java Clean Architecture
 
+</br>
+</br>
+
+<div align="center">
+
+### EM CONSTRUÇÃO
+
+ </div>
 </hr>
 </br>
 </br>
@@ -12,9 +20,8 @@
 <!-- Imagem da Tela inicial do Aplicativo -->
 <div align="center">
 
-<!-- ![HelpDesk01]()
-![HelpDesk02]()
-![HelpDesk03]() -->
+![Clean Arc](https://github.com/DaniloADamasceno/Image-Bank/assets/71226047/615b5b03-496c-4e19-afb2-e1a44fcc7c76)
+
 
  </div>
 
@@ -111,6 +118,13 @@ Se desejar contribuir para este projeto, siga estas etapas:
 ________________________________________________________________________________________________________________________________________________________________
 
 ## Atualizações de Projeto e suas Versões
+
+*Atualização* 1.1.0 :
+> Desenvolvimento do projeto.
+> BACK-END em desenvolvimento.
+> Desenvolvimento da aplicação de disparo de emails , tratamento de erros e alguns reparos.
+> --> **PROJETO EM DESENVOLVIMENTO.**
+</br>
 
 *Atualização* 1.0.0 :
 > Desenvolvimento do projeto.
